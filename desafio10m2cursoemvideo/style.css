@@ -19,12 +19,17 @@ header{
 }
 nav{
     font-weight: bold;
-    
 }
 nav > a{
     text-decoration: none;
     color: white;
     margin: 10px;
+}
+nav > a:hover{
+    background-color: rgb(41, 146, 87);
+    border-radius: 3px;
+    padding: 10px;
+    transition: background-color 0.5s;
 }
 section#titulos >  h1{
     font-weight: bold;
@@ -75,7 +80,10 @@ div#video{
     display: flex;
     justify-content: center;
 }
-section#links > p#pergunta{
+aside{
+    padding: 10px;
+}
+aside > p#pergunta{
     background-color: rgb(47, 168, 102);
     border-radius: 5px 5px 0 0;
     padding: 10px;
