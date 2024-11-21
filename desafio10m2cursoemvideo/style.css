@@ -93,6 +93,9 @@ span > ul{
 span > ul#lista01{
     margin-right: 250px;
 }
+ul#lista01, #lista02{
+    list-style-type: '✔ ';
+}
 div#listas{
     background-color: rgb(197, 235, 214);
     border-radius: 0 0 5px 5px;
