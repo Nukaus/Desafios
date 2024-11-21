@@ -1,43 +1,90 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family: 'android';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format(truetype);
+}
 body{
-    background-color: greenyellow;
+    background-color: rgb(132, 225, 173);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 header{
-    background-color: aqua;
+    color: white;
+    background-image: linear-gradient(to top, rgb(26, 92, 56), rgb(41, 146, 87), rgb(59, 211, 127));
     margin: 0;
     padding: 10px;
     text-align: center;
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.425);
+    box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.425);
+}
+nav{
+    font-weight: bold;
+    
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
 }
 section#titulos >  h1{
+    font-weight: bold;
+    font-size: 2em;
     margin: 0;
+}
+section#titulos >  h2{
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 section#menu{
     text-align: left;
 }
+section#historia > h2{
+    font-size: 2em;
+}
+.fundo{
+    background-color: rgb(223, 244, 232);
+    margin: 0 10px;
+}
 main{
-    width: 800px;
-    padding: 10px;
+    width: 820px;
     margin: 0 auto 15px auto;
     background-color: white;
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.425);
+    box-shadow: 0px 2px 6px 2px rgba(10, 10, 10, 0.397);
     border-radius: 0 0 5px 5px;
+}
+section{
+    padding: 10px;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
 }
 p{
     text-indent: 30px;
 }
+h2{ 
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    color: rgb(27, 129, 74);
+}
+section#videos{
+    background-color: rgb(26, 92, 56);
+}
 div#video{
-    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 section#links > p#pergunta{
-    background-color: blue;
+    background-color: rgb(47, 168, 102);
     border-radius: 5px 5px 0 0;
     padding: 10px;
     margin: 0;
+}
+p#pergunta{
+    font-weight: bold;
+    text-indent: 0;
+    color: white;
 }
 span > ul{
     display: inline-block;
@@ -47,12 +94,12 @@ span > ul#lista01{
     margin-right: 250px;
 }
 div#listas{
-    background-color: rgb(124, 124, 248);
+    background-color: rgb(197, 235, 214);
     border-radius: 0 0 5px 5px;
     padding: 10px;
 }
 footer{
-    background-color: rgb(51, 255, 187);
+    background-color: rgb(26, 92, 56);
     text-align: center;
     padding: 5px;
 }
