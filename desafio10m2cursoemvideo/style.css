@@ -1,10 +1,10 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&display=swap');
 @font-face {
     font-family: 'Android';
     src: url(pacote-projeto-d010/fontes/idroid.otf) format(opentype);
     font-weight: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Faculty+Glyphic&display=swap');
 
 :root{
     --cor0: #c5ebd6;
@@ -15,26 +15,26 @@
     --cor5: #063d1e;
 
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --font-destaque: 'Bebas Neue', serif, cursive;
-    --font-android: 'Android', cursive;
+    --font-destaque: "Bebas Neue", serif;
+    --font-android: 'Android';
 
 }
-body{
-    background-color: var(--cor1);
-    font-family: Arial, Helvetica, sans-serif;
+*{
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: var(--cor1);
+    font-family: var(--font-padrao);
+
+}
 header{
+    
     color: white;
-    background-image: linear-gradient(to top, rgb(26, 92, 56), rgb(41, 146, 87), rgb(59, 211, 127));
-    margin: 0;
+    background-image: linear-gradient(to top, #1a5c37, #2fa866, #3ddc84);
     padding: 10px;
     text-align: center;
     box-shadow: 2px 1px 3px 2px rgba(0, 0, 0, 0.425);
-}
-nav{
-    font-weight: bold;
 }
 nav > a{
     text-decoration: none;
@@ -48,13 +48,14 @@ nav > a:hover{
     transition: background-color 0.5s;
 }
 section#titulos >  h1{
-    font-weight: bold;
+    font-family: var(--font-destaque);
+    font-weight: normal;
     font-size: 2em;
-    margin: 0;
+    margin-bottom: 30px;
 }
 section#titulos >  h2{
+    font-family: var(--font-destaque);
     font-weight: normal;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 section#menu{
@@ -68,11 +69,15 @@ section#historia > h2{
     margin: 0 10px;
 }
 main{
-    width: 820px;
+    max-width: 800px;
+    min-width: 320px;
     margin: 0 auto 15px auto;
     background-color: white;
     box-shadow: 0px 2px 6px 2px rgba(10, 10, 10, 0.397);
     border-radius: 0 0 5px 5px;
+}
+img{
+    width: 100%;
 }
 section{
     padding: 10px;
@@ -85,7 +90,7 @@ p{
     text-indent: 30px;
 }
 h2{ 
-    font-family: 'android', Arial, Helvetica, sans-serif;
+    font-family: var(--font-android);
     color: var(--cor4);
 }
 section#videos{
@@ -103,7 +108,6 @@ aside > p#pergunta{
     background-color: var(--cor3);
     border-radius: 5px 5px 0 0;
     padding: 10px;
-    margin: 0;
 }
 p#pergunta{
     font-weight: bold;
@@ -118,6 +122,7 @@ span > ul#lista01{
     margin-right: 250px;
 }
 ul#lista01, #lista02{
+    padding: 10px;
     list-style-type: '✔ ';
 }
 div#listas{
@@ -130,6 +135,10 @@ footer{
     text-align: center;
     padding: 5px;
 }
-footer > p{
-    margin: 0;
+p#rodape > a:visited{
+    color: var(--cor0);
 }
+p#rodape > a{
+    color: var(--cor0);
+}
+
